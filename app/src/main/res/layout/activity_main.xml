@@ -5,14 +5,23 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".HelloDroidActivity">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="@string/welcome_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:textSize="24sp" android:id="@+id/clickCounter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="#673AB7"/>
+    <ImageView
+            android:layout_width="205dp"
+            android:layout_height="169dp" app:srcCompat="@android:drawable/sym_def_app_icon"
+            android:id="@+id/droidImage" android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/clickCounter" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="103dp" android:layout_marginEnd="103dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="144dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
